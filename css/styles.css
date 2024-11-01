@@ -1,0 +1,37 @@
+.container {
+    position: relative;
+    max-width: 212px;
+    height: 212px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.wave-fade-out {
+    transition: opacity 3.6s cubic-bezier(0.29, 0, 0.71, 1); /* Aumenta a duração da transição */
+    opacity: 0;
+}
+
+.wave {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Para que cliques não interfiram nas animações */
+}
+
+
